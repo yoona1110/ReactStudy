@@ -1,19 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// 일반적인 JS에서 사용하는 방법
+// pPhysicalDOM: 물리 DOM 객체
+let pPhysicalDOM = document.createElement('p') // <p> 요소 생성
+pPhysicalDOM.innerText = 'Hello physical DOM world!'
+// <p> 요소를 <body>의 마지막 자식 요소로 추가
+// pPhysicalDOM 객체를 DOM 트리에 추가 -> 결과를 pPhysicalDOM 객체가 렌더링됨
+document.body.appendChild(pPhysicalDOM)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// React 방식 - 가상 DOM 객체 사용
+const pVirtualDOM = React.createElement('p', null, 'Hello virtual DOM world!')
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
+root.render(pVirtualDOM) // 가상 DOM -> 물리 DOM으로 전환
