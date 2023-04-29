@@ -14,10 +14,9 @@ export default function App() {
   return (
     <div>
       <EventListener />
-      <OnClick />
       <ReactOnClick />
       <DispatchEvent />
-      <EventBubbling />
+      <OnClick />
       <StopPropagation />
       <VariousInputs />
       <OnChange />
