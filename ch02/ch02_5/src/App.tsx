@@ -14,6 +14,7 @@ export default function App() {
   return (
     <div>
       <EventListener />
+      <EventBubbling />
       <ReactOnClick />
       <DispatchEvent />
       <OnClick />
