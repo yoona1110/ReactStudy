@@ -1,0 +1,9 @@
+/* TailwindCSS 반영 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.material-icons {
+  font-family: "Material Icons";
+  display: inline-block;
+}
