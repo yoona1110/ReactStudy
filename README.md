@@ -32,7 +32,7 @@
 &nbsp;&nbsp;3-5. daisyui CSS 컴포넌트 이해하기  
 <br/>
 
-### 4. 함수 컴포넌트와 리액트 훅 - ✅  
+### 4. 함수 컴포넌트와 리액트 훅 - ❎  
 
 &nbsp;&nbsp;4-1. 처음 만나는 리액트 훅  
 &nbsp;&nbsp;4-2. useMemo와 useCallback 훅 이해하기  
