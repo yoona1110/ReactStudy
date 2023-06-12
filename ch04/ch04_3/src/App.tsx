@@ -1,11 +1,12 @@
-import UseOrCeateTest from './pages/UseOrCreateTest'
-import Memo from './pages/Memo'
+import NumberState from './pages/NumberState'
+import InputTest from './pages/InputTest'
+
 
 export default function App() {
   return (
-    <div> 
-      <Memo/>
-      <UseOrCeateTest/>
+    <div>
+      <NumberState/>
+      <InputTest/>
     </div>
   )
 }
